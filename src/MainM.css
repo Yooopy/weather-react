@@ -37,15 +37,18 @@ body {
   padding: 0px 15px;
   border-radius: 100px;
   border: none;
-  background-color: #ffffffe3;
+  background-color: #313131e3;
   backdrop-filter: blur(5px);
   font-size: medium;
-  color: #242424;
+  color: white !important;
   font-family: poppins;
   flex-grow: 1;
   outline: none;
   outline: none;
   transition: all 0.2s ease;
+}
+.container input:hover {
+  transform: scale(1.02);
 }
 .container svg {
   background-color: #ffffffe3;
@@ -56,6 +59,15 @@ body {
   padding: 5px;
   margin: 0px 0px 0px 10px;
   transition: all 0.2s ease;
+}
+.container svg:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #000000be;
+  cursor: pointer;
+}
+.container svg:active {
+  background-color: #9e9e9e;
+  transform: scale(1);
 }
 
 .weather-container {
@@ -72,6 +84,11 @@ body {
   background-color: #24242470;
   transition: all 0.2s ease;
   display: none;
+}
+.weather-container:hover {
+  transform: perspective(1000px) rotateX(12deg) scale(1.2);
+  box-shadow: 0px 0px 20px #1b1b1bbe;
+  cursor: pointer;
 }
 .weather-container h2 {
   font-size: xx-large;

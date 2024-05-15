@@ -76,7 +76,7 @@ function MainM() {
         <div className="weather-container">
           <img
             className="weather-icon"
-            src="./src/assets/icon.png"
+            src={`https://openweathermap.org/img/wn/${weatherIcon}@2x.png`}
             alt="weather-icon"
           ></img>
           <h2>{city}</h2>
